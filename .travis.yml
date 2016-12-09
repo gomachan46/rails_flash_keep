@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+language: ruby
+rvm:
+  - 2.2.3
+gemfile:
+  - Gemfile
+env:
+  - DB=mysql
+install: make setup
+script:
+  - travis_wait 30 make test
