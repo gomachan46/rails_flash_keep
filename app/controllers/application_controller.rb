@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  after_action :keep_flash_hello
+  after_action :keep_flash_login_bonus
 
   # flashメッセージを各actionでは引き回して保持し続ける
   def keep_flash_login_bonus
