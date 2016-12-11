@@ -1,5 +1,5 @@
 <p>top</p>
-<% if flash[:hello] %>
-    <%# 引き回されたflash[:hello]はここで一度だけ消化されておしまいになる %>
-    <p>hello, <%= flash[:hello] %></p>
+<% if flash[:login_bonus] %>
+    <%# 引き回されたflash[:login_bonus]はここで一度だけ消化されておしまいになる %>
+    <p><%= flash[:login_bonus]%> controllerでログインボーナス獲得したよ</p>
 <% end %>

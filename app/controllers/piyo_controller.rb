@@ -1,6 +1,6 @@
 class PiyoController < ApplicationController
   def index
-    flash[:hello] = "piyo"
+    flash[:login_bonus] = "piyo"
     redirect_to fuga_path # リダイレクトでも
   end
 end

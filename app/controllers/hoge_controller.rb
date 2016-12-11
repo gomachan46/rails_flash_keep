@@ -1,6 +1,6 @@
 class HogeController < ApplicationController
   def index
-    flash[:hello] = "hoge"
+    flash[:login_bonus] = "hoge"
      # renderingでも
   end
 end
